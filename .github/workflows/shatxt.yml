@@ -18,7 +18,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: update file and push to remote
         run: |
-          echo $GITHUB_SHA > SHA.txt
+          echo $GITHUB_SHA > PATCH-SHA.txt
 
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
